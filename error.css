@@ -1,0 +1,26 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color:white;
+}
+p {
+    font-family: "Fira Code", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+p > b {
+    color:aquamarine;
+}
+input {
+    background-color: black;
+    caret-color: blue;
+}
+p > input:focus {
+    outline:none;
+    border:none;
+}
