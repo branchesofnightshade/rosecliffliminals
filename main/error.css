@@ -6,8 +6,10 @@
 body {
     background-color: black;
     color:white;
+    margin: 2em;
 }
-p {
+p, 
+p > input {
     font-family: "Fira Code", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -23,4 +25,7 @@ input {
 p > input:focus {
     outline:none;
     border:none;
+}
+p > input {
+    color:white;
 }
