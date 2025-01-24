@@ -1,0 +1,1 @@
+let pass = document.getElementById('password');
