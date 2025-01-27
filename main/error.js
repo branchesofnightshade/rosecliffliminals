@@ -44,13 +44,19 @@ function passwordBypass() {
                     } else {
                         console.log("irrelevant key press");
                     }
-                    think.value = '';
+                    // think.value = '';
                 });
             },5000);
             break;
 
         case '412184':
-
+            fetch('/filesystem.json')
+            .then(response => response.json())
+            .then(users => {
+                console.log(users);
+            })
+            .catch(error => console.log(error));
+            break;
 
         default:
             console.log("Invalid password attempt");
@@ -58,4 +64,8 @@ function passwordBypass() {
             setTimeout(() => {permission.textContent = "Access Denied";},6000);
     }
     pass.value = '';
+}
+
+function typeError() {
+
 }

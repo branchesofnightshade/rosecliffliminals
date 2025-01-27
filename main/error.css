@@ -7,6 +7,7 @@ body {
     background-color: black;
     color:white;
     margin: 2em;
+
 }
 p, 
 p > input {
@@ -16,7 +17,7 @@ p > input {
     font-style: normal;
 }
 p > b {
-    color:aquamarine;
+    color:blue;
 }
 input {
     background-color: black;
