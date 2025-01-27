@@ -28,4 +28,6 @@ p > input:focus {
 }
 p > input {
     color:white;
+    border:none;
+    outline:none;
 }

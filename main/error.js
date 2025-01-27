@@ -14,19 +14,48 @@ function passwordBypass() {
     
     const wait = document.getElementById('wait');
     const permission = document.getElementById('permission');
+    const welcome = document.getElementById('welcome');
+    const hmm = document.getElementById('hmm');
 
     switch (pass.value) {
         case '211605':
-        console.log(pass.value);
-        wait.innerHTML +=  `
-        <span>Please Wait...</span>
-        `
-        permission.innerHTML += `
-        <span>Access Granted</span>
-        `
-        break;
+            console.log('Password entered: ' + pass.value);
+            wait.textContent = "Please Wait...";
+            setTimeout(() => {permission.textContent = "Access Granted";},2000);
+            setTimeout(() => {
+                let user = "E.Bridger";
+                pass.style.display = "none";
+                welcome.innerHTML += `Welcome Back ${user}`
+                hmm.innerHTML += `<b>phoenixfeather@saveme: ~$</b><input type="text" id="think"> `
+
+                const think = document.getElementById('think');
+
+                think.addEventListener("keypress", function(event) {
+                    if (event.key === "Enter") {
+                        switch (think.value) {
+                            case 'recipes':
+                                let none = document.getElementById('none');
+                                none.innerHTML += `https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON`;
+                                break;
+
+                            default:
+                                console.log("nope");
+                        }
+                    } else {
+                        console.log("irrelevant key press");
+                    }
+                    think.value = '';
+                });
+            },5000);
+            break;
+
+        case '412184':
+
 
         default:
-        console.log("mb chat");
+            console.log("Invalid password attempt");
+            wait.textContent = "Please Wait...";
+            setTimeout(() => {permission.textContent = "Access Denied";},6000);
     }
+    pass.value = '';
 }
