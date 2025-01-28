@@ -53,7 +53,7 @@ function passwordBypass() {
             fetch('/filesystem.json')
             .then(response => response.json())
             .then(users => {
-                console.log(users);
+                
             })
             .catch(error => console.log(error));
             break;
