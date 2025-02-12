@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    color:white;
 }
 body {
     background-color: black;
@@ -22,11 +23,13 @@ p > b {
 input {
     background-color: black;
     caret-color: blue;
+    outline:none;
+    border:none;
 }
 p > input:focus {
     outline:none;
     border:none;
-}
+}s
 p > input {
     color:white;
     border:none;
