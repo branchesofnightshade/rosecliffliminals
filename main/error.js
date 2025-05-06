@@ -17,15 +17,21 @@ function passwordBypass() {
     
     const wait = document.getElementById('wait');
     const permission = document.getElementById('permission');
-    const welcome = document.getElementById('welcome');
     const hmm = document.getElementById('hmm');
 
     switch (pass.value) {
         case '211605':
-           eb();
-           break;
+           eb(); break;
         case '412184':
-            ft();
+            ft(); break;
+        case '603324':
+            ml(); break;
+        case '262275':
+            dl(); break;
+        case '404214':
+            ed(); break;
+        case 'catalog':
+            hmm.innerHTML += `<a href="catalog/catalog.html">inject</a> <br> <a href="index.html">Resist</a>`;
             break;
         default:
             console.log("Invalid password attempt");

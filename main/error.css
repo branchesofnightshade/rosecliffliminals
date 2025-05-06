@@ -2,27 +2,27 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-    color:white;
+    color:#F4D35E;
 }
 body {
-    background-color: black;
-    color:white;
+    background-color: rgb(35,43,43);
+    color:#F4D35E;
     margin: 2em;
 
 }
-p, 
+p,
 p > input {
     font-family: "Fira Code", serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; 
 }
 p > b {
-    color:blue;
+    color:#95A3A4;
 }
 input {
-    background-color: black;
-    caret-color: blue;
+    background-color: rgb(35,43,43);
+    caret-color: #F4D35E;
     outline:none;
     border:none;
 }
@@ -31,7 +31,7 @@ p > input:focus {
     border:none;
 }s
 p > input {
-    color:white;
+    color: #F4D35E;
     border:none;
     outline:none;
 }
